@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>مرحبًا بك في منصّة التطوير الأكاديمي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500;700&display=swap');body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+  background: radial-gradient(circle at top right, #e3f2fd, #bbdefb);
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/clean-textile.png');
+  animation: pulse 10s infinite ease-in-out;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 0.95; }
+}
+
+.container {
+  text-align: center;
+  padding: 100px 20px;
+  color: #0d47a1;
+}
+
+.container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  animation: fadeInDown 1.2s ease forwards;
+}
+
+.container p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+  animation: fadeInUp 1.4s ease forwards;
+}
+
+.start-button {
+  background-color: #0d47a1;
+  color: white;
+  font-size: 20px;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: fadeInUp 1.6s ease forwards;
+}
+
+.start-button:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+  <div class="wave"></div>
+  <div class="container">
+    <h1>منصّة التقييم الأكاديمي</h1>
+    <p>نحن نؤمن أن كل صوت يُحدث فرقًا. هذه منصّتك لتعبّر عن تجربتك وتساهم في تطوير بيئة التعليم داخل كليتنا. كن أنت البداية!</p>
+    <a href="استبيانات.html" class="start-button">ابدء الآن</a>
+  </div>
+</body>
+</html>
